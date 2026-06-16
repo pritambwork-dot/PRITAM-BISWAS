@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- Rounded dark background container for superb contrast in all browser tabs (Dark & Light browser themes) -->
+  <rect width="100" height="100" rx="26" fill="#030303" stroke="rgba(255,255,255,0.05)" strokeWidth="1" />
+  
+  <!-- Subtle circular grid pattern behind the monogram to give a professional tech blueprint theme -->
+  <circle cx="50" cy="50" r="38" stroke="rgba(255,255,255,0.03)" strokeWidth="1" strokeDasharray="3,3" />
+  <circle cx="50" cy="50" r="28" stroke="rgba(255,255,255,0.02)" strokeWidth="1" />
+  <circle cx="50" cy="50" r="18" stroke="rgba(255,255,255,0.02)" strokeWidth="1" />
+
+  <!-- The Monogram Group with cyber gradient and glow filter -->
+  <g filter="url(#dropGlow)">
+    <!-- Vertical stem -->
+    <path d="M 34,24 L 34,76" stroke="url(#cyberGrad)" strokeWidth="7.5" strokeLinecap="round" />
+    
+    <!-- P and B loops: sharing middle bar and clean geometry -->
+    <path d="M 34,24 L 54,24 C 67,24 67,48 54,48 L 34,48" stroke="url(#cyberGrad)" strokeWidth="7.5" strokeLinecap="round" strokeLinejoin="round" />
+    <path d="M 34,48 L 56,48 C 70,48 70,76 56,76 L 34,76" stroke="url(#cyberGrad)" strokeWidth="7.5" strokeLinecap="round" strokeLinejoin="round" />
+  </g>
+
+  <!-- Highlighting micro-accent dot/spark to signify engineering/AI focus -->
+  <circle cx="74" cy="28" r="3" fill="#22d3ee" />
+
+  <defs>
+    <!-- Cyan, Rose, Purple Cybertech Gradient -->
+    <linearGradient id="cyberGrad" x1="30" y1="20" x2="70" y2="80" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stopColor="#22d3ee" />
+      <stop offset="60%" stopColor="#ec4899" />
+      <stop offset="100%" stopColor="#c084fc" />
+    </linearGradient>
+
+    <!-- Subtle elegant neon-glow filter -->
+    <filter id="dropGlow" x="-10%" y="-10%" width="120%" height="120%" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" opacity="0.35" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+</svg>
